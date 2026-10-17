@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Impakt | Authorized Amazon.ca Wholesale Partner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6FB; --surface:#FFFFFF; --ink:#101828; --muted:#4B5568; --line:#D8DFEA;
+  --brand:#2B50D9; --brand-ink:#FFFFFF; --accent:#8CCBBF; --accent-ink:#0F2A27;
+  --hero:#0F1C3F; --hero-ink:#F3F6FB; --hero-muted:#AEBBD6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B1222; --surface:#121C33; --ink:#E8EDF7; --muted:#9AA8C4; --line:#24304D;
+  --brand:#2FD0AE; --brand-ink:#04261F; --hero:#09132B; --hero-ink:#F3F6FB; --hero-muted:#9AA8C4; color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#0B1222; --surface:#121C33; --ink:#E8EDF7; --muted:#9AA8C4; --line:#24304D;
+  --brand:#2FD0AE; --brand-ink:#04261F; --hero:#09132B; --hero-ink:#F3F6FB; --hero-muted:#9AA8C4; color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.015em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:700 22px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.02em}
+.logo b{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:500;padding:13px 22px;border-radius:6px;text-decoration:none}
+.btn:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent;color:inherit;border:1px solid currentColor}
+.hero{background:var(--hero);color:var(--hero-ink)}
+.hero .logo{color:var(--hero-ink)}
+.hero-body{padding:72px 0 88px;display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.2rem);font-weight:700;max-width:14ch}
+.hero p.lead{color:var(--hero-muted);font-size:1.15rem;max-width:46ch;margin:24px 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{margin:0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.25)}
+.facts li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.25);display:flex;justify-content:space-between;gap:16px}
+.facts span:first-child{color:var(--hero-muted)}
+.facts span:last-child{font-weight:500;text-align:right}
+section{padding:80px 0}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);max-width:20ch;margin-bottom:16px}
+.intro{color:var(--muted);max-width:60ch;margin:0 0 44px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border-top:2px solid var(--ink)}
+.cat{padding:24px 24px 28px 0;border-bottom:1px solid var(--line)}
+.cat h3{font-size:1.35rem;margin-bottom:8px}
+.cat p{margin:0;color:var(--muted);font-size:.98rem}
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin:0 0 40px}
+.unit{margin:0}
+.unit svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.unit h3{font-size:1.15rem;margin:14px 0 4px}
+.unit p{margin:0;color:var(--muted);font-size:.97rem}
+.climate{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.climate div{border-left:3px solid var(--accent);padding-left:18px}
+.climate h3{font-size:1.15rem;margin-bottom:4px}
+.climate p{margin:0;color:var(--muted);font-size:.97rem}
+.note{margin:24px 0 0;color:var(--muted);font-size:.85rem}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1.3fr;gap:56px}
+.two h2{margin-bottom:0}
+.promises{display:grid;gap:28px}
+.promises h3{font-size:1.2rem;margin-bottom:4px}
+.promises p{margin:0;color:var(--muted)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.steps li{counter-increment:s;border-left:3px solid var(--accent);padding-left:18px}
+.steps li::before{content:"Step " counter(s);display:block;font-size:.85rem;color:var(--muted);margin-bottom:4px}
+.steps h3{font-size:1.15rem;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted);font-size:.97rem}
+.close{background:var(--hero);color:var(--hero-ink);text-align:left}
+.close h2{max-width:22ch}
+.close p{color:var(--hero-muted);max-width:52ch;margin:0 0 28px}
+footer{padding:28px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:780px){.hero-body,.two{grid-template-columns:1fr;gap:40px}section{padding:56px 0}.hero-body{padding:48px 0 56px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#top" aria-label="Digital Impakt"><svg width="172" height="48" viewBox="0 0 172 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A3B8E6"/><stop offset="1" stop-color="#86C9BC"/></linearGradient></defs><text x="86" y="14" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="700" font-size="12" letter-spacing="4" fill="#F3F6FB">DIGITΛL</text><text x="86" y="34" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="700" font-size="19" letter-spacing="4" fill="url(#lg)">IMPΛKT</text><path d="M18 44 C55 40 115 38 154 36 C120 44 60 46 18 44 Z" fill="url(#lg)"/></svg></a>
+      <a class="btn ghost" href="#contact">Start a conversation</a>
+    </header>
+    <div class="hero-body" id="top">
+      <div>
+        <h1>Your brand, sold well on Amazon.ca.</h1>
+        <p class="lead">Digital Impakt is an Ontario-registered wholesale partner that buys direct from brands and manufacturers and sells through Amazon in Canada and the United States, with Amazon.ca as our home marketplace.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Become a supplier</a>
+          <a class="btn ghost" href="#how">How we work</a>
+        </div>
+      </div>
+      <ul class="facts" aria-label="Company facts">
+        <li><span>Registered in</span><span>Ontario, Canada</span></li>
+        <li><span>Markets</span><span>Canada and United States</span></li>
+        <li><span>Primary channel</span><span>Amazon.ca</span></li>
+        <li><span>Model</span><span>Direct wholesale purchasing</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Categories we want to carry</h2>
+    <p class="intro">We buy wholesale from brands that want a careful, accountable seller representing them online.</p>
+    <div class="cats">
+      <div class="cat"><h3>Food and beverage</h3><p>Packaged foods, snacks, drinks and pantry staples from established manufacturers.</p></div>
+      <div class="cat"><h3>Health and nutrition</h3><p>Sports nutrition, supplements and wellness products, handled with attention to expiry and storage.</p></div>
+      <div class="cat"><h3>Beauty and personal care</h3><p>Skin care, hair care and cosmetics, listed accurately and kept authentic.</p></div>
+      <div class="cat"><h3>Consumer electronics</h3><p>Accessories and devices from brands that want clean listings and dependable fulfilment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="storage">
+  <div class="wrap">
+    <h2>Storage that fits your order</h2>
+    <p class="intro">Our storage sizes change with the quantity a supplier requests. A small trial order and a full truckload are allocated different space, and we confirm the space and conditions with you before the first shipment arrives.</p>
+    <div class="units">
+      <figure class="unit">
+        <svg viewBox="0 0 320 190" role="img" aria-label="Illustration of a compact storage bay with one roll-up door"><rect x="0" y="150" width="320" height="40" style="fill:var(--line)"/><rect x="32" y="32" width="256" height="10" style="fill:var(--muted)"/><rect x="40" y="42" width="240" height="108" style="fill:var(--surface);stroke:var(--muted);stroke-width:2"/><rect x="130" y="80" width="60" height="70" style="fill:var(--line)"/><path d="M130 92H190M130 104H190M130 116H190M130 128H190M130 140H190" style="stroke:var(--muted);stroke-width:1.5"/></svg>
+        <figcaption><h3>Compact bay</h3><p>For trial orders and smaller quantities, from a few cartons up to a pallet or two.</p></figcaption>
+      </figure>
+      <figure class="unit">
+        <svg viewBox="0 0 320 190" role="img" aria-label="Illustration of a standard storage bay with two roll-up doors"><rect x="0" y="150" width="320" height="40" style="fill:var(--line)"/><rect x="32" y="32" width="256" height="10" style="fill:var(--muted)"/><rect x="40" y="42" width="240" height="108" style="fill:var(--surface);stroke:var(--muted);stroke-width:2"/><rect x="70" y="80" width="70" height="70" style="fill:var(--line)"/><rect x="180" y="80" width="70" height="70" style="fill:var(--line)"/><path d="M70 92H140M70 104H140M70 116H140M70 128H140M70 140H140M180 92H250M180 104H250M180 116H250M180 128H250M180 140H250" style="stroke:var(--muted);stroke-width:1.5"/></svg>
+        <figcaption><h3>Standard bay</h3><p>For regular reorders and growing ranges, holding several pallets of mixed products.</p></figcaption>
+      </figure>
+      <figure class="unit">
+        <svg viewBox="0 0 320 190" role="img" aria-label="Illustration of a large storage bay with a wide dock door"><rect x="0" y="150" width="320" height="40" style="fill:var(--line)"/><rect x="32" y="32" width="256" height="10" style="fill:var(--muted)"/><rect x="40" y="42" width="240" height="108" style="fill:var(--surface);stroke:var(--muted);stroke-width:2"/><rect x="60" y="68" width="200" height="82" style="fill:var(--line)"/><path d="M60 80H260M60 92H260M60 104H260M60 116H260M60 128H260M60 140H260" style="stroke:var(--muted);stroke-width:1.5"/></svg>
+        <figcaption><h3>Large bay</h3><p>For high-volume and truckload quantities, with space allocated to match the order.</p></figcaption>
+      </figure>
+    </div>
+    <div class="climate">
+      <div><h3>Climate-controlled storage</h3><p>Temperature-controlled space for products that are sensitive to heat or cold, such as supplements, beauty products and electronics.</p></div>
+      <div><h3>Ambient storage</h3><p>Standard dry storage for products with no special temperature requirements, such as many packaged goods and accessories.</p></div>
+    </div>
+    <p class="note">Illustrative images. Tell us your product and expected volume and we will confirm the right option.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap two">
+    <h2>What you can expect from us</h2>
+    <div class="promises">
+      <div><h3>Accurate, brand-safe listings</h3><p>We sell only genuine products purchased from you or your authorized channels, and we follow your brand guidelines on titles, images and claims.</p></div>
+      <div><h3>Respect for your pricing</h3><p>We are happy to work within your minimum advertised price policy and to keep pricing consistent across channels.</p></div>
+      <div><h3>Proper handling and compliance</h3><p>Correct storage, date-code tracking and Canadian labelling requirements are part of how we operate.</p></div>
+      <div><h3>One point of contact</h3><p>You deal directly with the owner. Questions about listings, stock or reporting get a straight answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How we work with a new supplier</h2>
+    <p class="intro">A simple process, so you know what happens at each stage.</p>
+    <ol class="steps">
+      <li><h3>Introduction</h3><p>We share our business details and the products we are interested in.</p></li>
+      <li><h3>Account setup</h3><p>We complete your wholesale application and provide any documents you require.</p></li>
+      <li><h3>First order</h3><p>We place a trial purchase and list your products to your standards.</p></li>
+      <li><h3>Ongoing growth</h3><p>We reorder on a regular schedule and share sales feedback as the relationship develops.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="close" id="contact">
+  <div class="wrap">
+    <h2>Interested in working together?</h2>
+    <p>Send us your wholesale terms, minimum order and application process. We will reply promptly.</p>
+    <a class="btn" href="mailto:info@digitalimpakt.ca">info@digitalimpakt.ca</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Digital Impakt. Registered in Ontario, Canada.</span>
+    <span>digitalimpakt.ca</span>
+  </div>
+</footer>
+</body>
+</html>
